@@ -1,4 +1,4 @@
-package com.haleU.tracker;
+package com.haleU.applicationTracker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

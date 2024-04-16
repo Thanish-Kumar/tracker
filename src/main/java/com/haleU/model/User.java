@@ -1,16 +1,19 @@
 package com.haleU.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users")
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String username;
     private String password;
+
+    /* To reset sequence in Db
+    ALTER SEQUENCE users_id_seq RESTART WITH 1;
+     */
 
     public User(String username, String password) {
         this.username = username;
