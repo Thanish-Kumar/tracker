@@ -19,7 +19,7 @@ public class RestController {
         return "Hello From HaleU";
     }
 
-    @GetMapping("/save-user")
+    @GetMapping("/saveuser")
     public String saveUser(@RequestParam String username, @RequestParam String password) {
         User user = new User(username, password);
         userService.saveMyUser(user);

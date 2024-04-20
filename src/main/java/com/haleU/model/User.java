@@ -15,6 +15,10 @@ public class User {
     ALTER SEQUENCE users_id_seq RESTART WITH 1;
      */
 
+    public User(){
+
+    }
+
     public User(String username, String password) {
         this.username = username;
         this.password = password;
